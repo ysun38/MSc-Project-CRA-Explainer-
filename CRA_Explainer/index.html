@@ -1,0 +1,340 @@
+<!-- © <2022> The University of Leeds and Yajie Sun -->
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://www.jq22.com/demo/left-side201912092331/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./cssJq/left-side-menu.css">
+    <link rel="stylesheet" type="text/css" href="./cssJq/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <script src="./cssJq/jquery-1.10.2.js"></script><script src="./cssJq/jquery.min.js"></script>
+    <script src="./cssJq/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="./cssJq/left-side-menu.js"></script>
+       <!-- 移动端导航 end -->
+  <link rel="stylesheet" href="css/prism.css">
+  <script src="js/prism.js"></script>
+  <style>
+    .isShow{
+      display: none;
+    }
+    .isHide{
+      display: block;
+    }
+    .head_span{
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body style="">
+  <div class="head">
+    <span class="head_span">CRA Explainer</span>
+  </div>
+<div class="left-side-menu">
+    <div class="lsm-expand-btn">
+        <div class="lsm-mini-btn">
+            <label>
+                <input type="checkbox" checked="checked">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="30"></circle>
+                    <path class="line--1" d="M0 40h62c18 0 18-20-17 5L31 55"></path>
+                    <path class="line--2" d="M0 50h80"></path>
+                    <path class="line--3" d="M0 60h62c18 0 18 20-17-5L31 45"></path>
+                </svg>
+            </label>
+
+        </div>
+    </div>
+    <div class="lsm-container">
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 689px;"><div class="lsm-scroll" style="overflow: hidden; width: auto; height: 689px;">
+            <div class="lsm-sidebar">
+                <ul class="ulClick">
+                  <li class="lsm-sidebar-item">
+                    <a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_2"></i><span>1. Graphs</span><i class="my-icon lsm-sidebar-more"></i></a>
+                    <ul style="display: none;">
+                        <li class="li_click" onclick="getLiId(this)" id="11" ><a href="javascript:;"><span>1.1	Graph</span></a></li>
+                        <li class="li_click" onclick="getLiId(this)" id="12"><a href="javascript:;"><span>1.2	GNNs</span></a></li>
+                    </ul>
+                </li>
+                <li class="lsm-sidebar-item">
+                  <a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_2"></i><span>2.	Graph-isomorphism	</span><i class="my-icon lsm-sidebar-more"></i></a>
+                  <ul style="display: none;">
+                      <li class="li_click" onclick="getLiId(this)" id="21"><a href="javascript:;"><span>2.1	What is graph-isomorphism</span></a></li>
+                      <li class="li_click" onclick="getLiId(this)" id="22"><a href="javascript:;"><span>2.2	An example of graph-isomorphism</span></a></li>
+                  </ul>
+                </li>
+                <li class="lsm-sidebar-item">
+                  <a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_2"></i><span>3.	Weisfeiler-Lehman (WL) algorithm</span><i class="my-icon lsm-sidebar-more"></i></a>
+                  <ul style="display: none;">
+                      <li class="li_click" onclick="getLiId(this)" id="31"><a href="javascript:;"><span>3.1	Background</span></a></li>
+                      <li class="li_click" onclick="getLiId(this)" id="32"><a href="javascript:;"><span>3.2	What is Weisfeiler-Lehman algorithm</span></a></li>
+                  </ul>
+                </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>4.	Color Refinement (CR) Algorithm</span><i class="my-icon lsm-sidebar-more"></i></a>
+                        <ul style="display: none;">
+                            <li class="li_click" onclick="getLiId(this)" id="41"><a href="javascript:;"><span>4.1	What is Color Refinement Algorithm?</span></a></li>
+                            <li class="li_click" onclick="getLiId(this)" id="42"><a class="" href="javascript:;"><span>4.2	Explanation of Color Refinement Algorithm</span></a></li>
+                            <li class="li_click" onclick="getLiId(this)" id="43"><a href="javascript:;"><span>4.3	Variants of CR algorithm</span></a></li>
+                            <li class="lsm-sidebar-item">
+                                <a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>4.4	Application 1: Graph isomorphism testing</span><i class="my-icon lsm-sidebar-more"></i></a>
+                                <ul style="display: none;">
+                                    <li class="li_click" onclick="getLiId(this)" id="441"><a href="javascript:;"><span>4.4.1	Weisfeiler-Lehman test</span></a></li>
+                                    <li class="li_click" onclick="getLiId(this)" id="442"><a href="javascript:;"><span>4.4.2	Program of Weisfeiler-Lehman test</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="lsm-sidebar-item">
+                              <a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>4.5	Application 2: The design of graph kernels based on color refinement</span><i class="my-icon lsm-sidebar-more"></i></a>
+                              <ul style="display: none;">
+                                  <li class="li_click" onclick="getLiId(this)" id="451"><a href="javascript:;"><span>4.5.1	Introduction of Graph Kernel</span></a></li>
+                                  <li class="li_click" onclick="getLiId(this)" id="452"><a href="javascript:;"><span>4.5.2	Weisfeiler-Lehman graph kernel</span></a></li>
+                              </ul>
+                          </li>
+                          <li class="li_click" onclick="getLiId(this)" id="46"><a href="javascript:;"><span>4.6	Application 3: A logical characterization of color refinement</span></a></li>
+                        </ul>
+                    </li>
+                  
+                </ul>
+            </div>
+        </div><div class="slimScrollBar" style="background: rgb(255, 250, 250); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 221.315px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 1; z-index: 90; right: 1px;"></div></div>
+    </div>
+
+</div>
+<div class="right-side-menu">
+  <div class="content">
+   <div class="isShow mainText isHide">
+    <p class="content_b">Learn Weisfeiler-Lehman Algorithm and Color Refinement Algorithm in your browser!
+    </p>
+    <!-- 首页一进去展示这个 -->
+    <div>
+      <span class="content_span">When studying graph neural networks, the traditional Weisfeiler-Lehman algorithm (WL), a graph-isomorphism test based on color refinement, becomes important.
+        Let's go on to discussing graph-isomorphism, Weisfeiler-Lehman algorithm, and color refinement algorithm.</span>
+        <img class="content_img3" src="./img/main_page.jpg" alt="">
+    </div>
+   </div>
+    <!-- 1. Graph -->
+   <div class="isShow 11">
+    <p class="content_t">1. Graphs </p>
+  <!-- 1.1 Graph -->
+    <p class="content_p">1.1 Graph </p>
+    <span class="content_span">The most fundamental part of GNN is a Graph. In Computer Science, a graph is a data structure consisting of two components, vertices (also called nodes), and edges. A graph G can be defined as G = (V, E), where V is the set of nodes, and E are the edges between them. </span>
+    <span class="content_span">Edges can be either directed or undirected, depending on whether there exist directional dependencies between vertices.</span>
+    <!-- 图片和注解一起居中 -->
+    <img class="content_img_1" src="./img/1_1.png" alt="">
+    <br>
+    <span class="content_figure">Figure 1.1 Directed Graph</span>
+   </div>
+   <div  class="isShow 12">
+     <!-- 1.2 GNNs -->
+     <p class="content_p">1.2 GNNs </p>
+     <span class="content_span">Graph Neural Networks (GNNs) are a class of deep learning methods designed to perform inference on data described by graphs. The key design element of GNNs is the use of pairwise message passing, such that graph nodes iteratively update their representations by exchanging information with their neighbors. 
+       GNNs are neural networks that can easily perform node-level, edge-level, and graph-level prediction tasks since they can be applied directly to graphs. GNNs can do what Convolutional Neural Networks (CNNs) failed to do.</span>
+     <span class="content_span">More GNNs related resources can be found: </span>
+     <a class="content_a" href="https://en.wikipedia.org/wiki/Graph_neural_network">https://en.wikipedia.org/wiki/Graph_neural_network</a> 
+   </div>
+  <!-- 2.	Graph-isomorphism -->
+ 
+   <div  class="isShow 21">
+    <p class="content_t">2. Graph-isomorphism </p>
+  <!-- 2.1 -->
+    <p class="content_p">2.1 What is graph-isomorphism? </p>
+    <span class="content_span"> Definition: In graph theory, an isomorphism of graphs G and H is a bijection between the vertex sets of G and H. If G=(V, E) and H=(V1, E1) are two graphs, G and H are isomorphic if there is a bijection m: V→V1, such that x exists for all x and y∈V, and y∈E is equivalent to m(x)m(y)∈E1.</span>
+    <span class="content_span">In simple terms, if graphs G and H have the same number of vertices, edges, and edge connectivity, then they have been shown to be isomorphic. In another word, points in G can also be thought of as being mapped from points in H.</span>
+   </div>
+<div class="isShow 22">
+  <!-- 2.2 -->  
+  <p class="content_p">2.2 An example of graph-isomorphism </p>
+  <span class="content_span">The following two graphs shown below are isomorphic (From Wikipedia), despite their different looking drawings.</span>
+  <img class="content_img1" src="./img/2_1.png" alt="">
+  <!-- 所有图片脚注相对于图片都要居中 class叫content_figure 辛苦！-->
+  <span class="content_figure">Figure 2.1 Example of graph-isomorphism</span>
+  <span class="content_span">In the analysis of social network, protein, gene network, etc., the similarity between each other is usually considered. Because molecules with similar structures may have similar functional properties, measuring graph similarity is a core problem in graph learning.</span>
+  <span class="content_span">At present, the graph isomorphism problem is usually considered as a non-deterministic polynomial problem. The most efficient algorithm is the Weisfeiler-Lehman algorithm, which can be solved in quasi-polynomial time.</span>
+  <span class="content_span">The website focuses on the algorithm itself, there is no more detailed description for graph-isomorphism. If you're interested in it, Wikipedia provides a detailed explanation of graph isomorphism: </span>
+  <a class="content_a" href="https://en.wikipedia.org/wiki/Graph_isomorphism">https://en.wikipedia.org/wiki/Graph_isomorphism</a> 
+</div>
+
+<div class="isShow 31">
+  <!-- 3.	Weisfeiler-Lehman (WL) algorithm -->
+  <p class="content_t">3.	Weisfeiler-Lehman (WL) algorithm</p>
+  <span class="content_span">After understanding the preliminary knowledge, we move on to the study of this algorithm.</span>
+  <!-- 3.1 -->
+  <p class="content_p">3.1	Background</p>
+  <span class="content_span">As a new graph data learning technology, graph neural network (GNN) has attracted extensive attention. Although GNN has achieved experimental success in many fields, Xu et al., Morris et al., pointed out that GNN cannot distinguish some graph pairs, such as graph isomorphism mentioned above. WL algorithm is an algorithm used to solve graph isomorphism problem. In order to make a revolutionary innovation in the design of graph neural network, it is inevitable to conduct a comprehensive and in-depth study on the essence of graph theory.</span>
+</div>
+  <div class="isShow 32">
+    <p class="content_t">3.	Weisfeiler-Lehman (WL) algorithm</p>
+    <span class="content_span">After understanding the preliminary knowledge, we move on to the study of this algorithm.</span>
+    <!-- 3.2 -->
+    <p class="content_p">3.2	What is Weisfeiler-Lehman algorithm?</p>
+    <span class="content_span">Weisfeiler-Lehman algorithm, proposed in 1968, is an important algorithm in graph theory, which is used to solve graph isomorphism problem. It is a way to check isomorphism, and on most graphs, you get a unique set of features, which means that each node on the graph has a unique role (the exceptions are grids, chains, and so on). Therefore, for most irregular graph structures, the features obtained can be used as the basis for determining whether graphs are isomorphic, namely WL Test (for example, whether two graphs are homogenous depends on the arrangement of nodes).</span>
+    <span class="content_span">There are many variations of the WL algorithm, one of which is the 1-dimensional WL (also known as "Color Refinement") algorithm, which is the most commonly used variant and the focus of our study. The following chapter discusses the detailed definition and explanation of 1-WL algorithm. Then we describe the k-WL algorithm in short.</span>
+</div>
+<div class="isShow 41">
+<!--  4.	Color Refinement (CR) Algorithm  -->
+<p class="content_t">4.	Color Refinement (CR) Algorithm </p>
+<span class="content_span">In the previous section, we mentioned the color refinement algorithm, which is a 1-dimensional variant of the WL algorithm. Now let's focus on the algorithm!</span>
+ <!-- 4.1 -->
+ <p class="content_p">4.1	What is Color Refinement Algorithm??</p>
+ <span class="content_span">Color Refinement (CR) is a combinatorial algorithm, also known as naive vertex classification and 1-dimensional Weisfeiler-Leman algorithm, that aims to classify vertices of graphs by similarity.</span>
+ <span class="content_span">Let's start with the following example to understand what CRA does. </span>
+ <!-- 宝儿 这个加载不出来了 你检查一下 辛苦！ -->
+ <iframe src="http://47.93.49.247/1/#seed=qtjzk" style="width:100%;height:600px;" frameborder="0"></iframe>
+ <span class="content_span">This example is an interactive visual implementation of the CR algorithm. How does the CR algorithm work? In short, it assigns a label (color) to each node, aggregates information about neighboring nodes, and modifies the color of the node until the color no longer changes (convergence). </span>
+ <span class="content_span">Specifically, the identical color is applied to each vertex. Then, any two vertices v and w that still have the same color will get different colors in each round of refinement if there is some color c such that v and w have different numbers of color c neighbors; otherwise, they will remain the same color. 
+   Thus, after the first round of refinement, two vertices only share the same color if and only if they have the same number of related edges. After the second round of refinement, they have the same color if and only if they have the same number of neighbors every k times. The refinement procedure continues until stable coloring (all pairs of vertices with the same label before refinement still have the same label after thinning) occurs.</span>
+</div>
+   <div  class="isShow 42">
+      <!-- 4.2 -->
+      <p class="content_p"> 4.2	Explanation of Color Refinement Algorithm</p>
+      <img class="content_img2" src="./img/content_1.png" alt="">
+      <img class="content_img2" src="./img/content_2.png" alt="">
+      <img class="content_img2" src="./img/content_3.png" alt="">
+      <img class="content_img2" src="./img/content_4.png" alt="">
+      <img class="content_img2" src="./img/content_5.png" alt="">
+      <img class="content_img1" src="./img/4_1.png" alt="">
+      <span class="content_figure">Figure 4.1 Pseudocode of CR Algorithm</span>
+   </div>
+   <div class="isShow 43">
+    <!-- 4.3 -->
+    <p class="content_p"> 4.3	Variants of CR algorithm</p>
+    <span class="content_span">Color refinement has several interesting variants, including a hierarchy of algorithms known as the Weisfeiler-Leman algorithm(s), and generalizations to other structures such as vertex- and edge-colored graphs, directed graphs and arbitrary relational structures, weighted graphs and even matrices. Many of these variations are needed in the applications of color refinement.</span>
+    <span class="content_span">The simplest extension of color refinement is the one to vertex-colored graphs: instead of starting the refinement procedure from the coloring that assigns the same color to all vertices, we start from the given vertex coloring. The extension to graphs that (also) have colored edges is not much harder; all we need to do in the refinement step is to consider the degrees with respect to different edge colors separately. 
+      Thus in a refinement round, two vertices v, w that still have the same color get different colors if there is some edge-color e and some color c of the current vertex-coloring such that v and w have a different number edges of color e into the color class c. To extend color refinement to directed graphs, we consider in-degrees and out-degrees separately.</span>
+   </div>
+  <div class="isShow 441">
+    <!-- 4.4 -->
+    <p class="content_p"> 4.4	Application 1: Graph isomorphism testing</p>
+  <!-- 4.4.1 -->
+    <p class="content_p"> 4.4.1	Weisfeiler-Lehman test</p>
+    <span class="content_span">The most used application of color refinement is graph isomorphism testing, also known as Weisfeiler-Lehman test (WL test).</span> 
+    <span class="content_span">WL test can be used for most irregular graph structures, and the feature set can be used as the criterion to assess whether the graph is isomorphic or not. In fact, Babai, Erdos, and Selkow demonstrated that almost all non-isomorphic graphs can be distinguished by color refinement.</span> 
+    <span class="content_span">When determining whether Graph G and Graph G’ are isomorphic, we can run color refinement on disjoint union G and G’. The key idea of the algorithm is to augment the node labels by the sorted set of node labels of neighbouring nodes, and compress these augmented labels into new, short labels. These steps are then repeated until the node label sets of G and G^’ differ, or the number of iterations reaches n. 
+      See Figure 2, a-d, for an illustration of these steps (note however, that the two graphs in the figure would directly be identified as non-isomorphic by the Weisfeiler-Lehman test, as their label sets are already different in the beginning).</span>
+    <span class="content_span">Sorting the set of multisets allows for a straightforward definition and implementation of f for the compression of labels in step 4: one keeps a counter variable for f that records the number of distinct strings that f has compressed before. f assigns the current value of this counter to a string if an identical string has been compressed before, but when one encounters a new string, one increments the counter by one and f assigns its value to the new string. 
+      The sorted order of the set of multisets guarantees that all identical strings are mapped to the same number, because they occur in a consecutive block. However, note that the sorting of the set of multisets is not required for defining f. Any other injective mapping will give equivalent results. The alphabet Σ has to be sufficiently large for f to be injective. For two graphs, |Σ| = 2n suffices.</span>
+    <span class="content_span">The Weisfeiler-Lehman algorithm terminates after step 4 of iteration i if {l_i (v)|v ∈V} ≠ {l_i (v')|v' ∈ V'}, that is, if the sets of newly created labels are not identical in G and G^’. The graphs are then not isomorphic. 
+      If the sets are identical after n iterations, it means that either G and G^’ are isomorphic, or the algorithm has not been able to determine that they are not isomorphic, for examples of graphs still debatable (possibly isomorphic, possibly not). by this algorithm or its higher dimensional variants. </span>
+    <img class="content_img1" src="./img/4_2.png" alt="">
+    <img class="content_img1" src="./img/4_3.png" alt="">
+    <span class="content_figure">Figure 4.2 & Figure 4.3: Illustration of the computation of the Weisfeiler-Lehman subtree kernel with h=1 for two graphs. Here {1,2,…,13}∈Σ are considered as letters. Note that compressed labels denote subtree patterns: For instance, if a node has label 8, this means that there is a subtree pattern of height 1 rooted at this node, where the root has label 2 and its neighbours have labels 3 and 5.</span>
+    <span class="content_span">As a side note:</span>
+    <img class="content_img2" src="./img/content_6.png" alt="">
+    <img class="content_img2" src="./img/content_7.png" alt="">
+    <img class="content_img1" src="./img/4_4.png" alt="">
+    <span class="content_figure">Figure 4.4: Two non-isomorphic graphs (Dechnaphthalene and dicyclopentyl in chemistry)</span>
+    <span class="content_span">Obviously, color refinement assigns the same color to all vertices, but the two graphs are not isomorphic. Therefore, color refinement cannot distinguish between any two regular graphs of the same degree (each vertex has the same degree).</span>
+  </div>
+  <div class="isShow 442">
+     <!-- 4.4.2 -->
+     <span class="content_p">4.4.2	Program of Weisfeiler-Lehman test</span>
+     <span class="content_span">The following is a program to evaluate graph isomorphism based on the CRA algorithm. </span>
+     <br>
+     <p class="content_subtitle">Label Compression:</p>
+     <pre class="line-numbers">
+       <code class="language-markup">
+         def compress(self, g):</br>
+           labels = []</br>
+           # new_labels = [v[MULTISET] for v in g.vs]</br>
+           labels = [v[CURRENT_LABEL_STR] for v in g.vs]</br>
+           labels.sort()</br>
+           for s in labels:</br>
+               &nbsp;&nbsp;&nbsp;&nbsp;fs = -1</br>
+               if s not in self.HASH:</br>
+               &nbsp;&nbsp;&nbsp;&nbsp;currentIndex = self.HASH['index']</br>
+               &nbsp;&nbsp;&nbsp;&nbsp;newIndex = str(int(currentIndex) + 1)</br>
+               &nbsp;&nbsp;&nbsp;&nbsp;self.HASH['index'] = newIndex</br>
+               &nbsp;&nbsp;&nbsp;&nbsp;fs = newIndex</br>
+               &nbsp;&nbsp;&nbsp;&nbsp;self.HASH[s] = fs</br>
+           # relabelling</br>
+           for v in g.vs:</br>
+           &nbsp;&nbsp;&nbsp;&nbsp;v[PREV_LABEL] = self.HASH[v[CURRENT_LABEL_STR]]</br>
+           g.set_of_newly_created_labels = set([v[PREV_LABEL] for v in g.vs])</br>
+           &nbsp;&nbsp;&nbsp;&nbsp;return g</br>
+       </code>
+     </pre>
+     <p class="content_subtitle">Generate Label:</p>
+     <pre class="line-numbers">
+       <code class="language-markup">
+         def generate_labels(g):</br>
+             for v in g.vs:</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;  v[MULTISET] = []</br>
+                 for nv in v.neighbors():</br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;  v[MULTISET].append(nv[PREV_LABEL])</br>
+                 v[MULTISET].sort()</br>
+         def generate_string_labels(g):</br>
+             for v in g.vs:</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;  concatString = ""</br>
+                 for each in v[MULTISET]:</br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;    concatString = concatString + str(each)</br>
+                 v[CURRENT_LABEL_STR] = str(v[PREV_LABEL]) + concatString
+         </code>
+     </pre>
+     <p class="content_subtitle">Input:</p>
+     <img class="content_img1" src="./img/4_input.png" alt="">
+     <p class="content_subtitle">Output (Labelled):</p>
+     <img class="content_img1" src="./img/4_output.png" alt="">
+     <pre class="line-numbers">
+       <code class="language-markup">
+         Iter#1: Labels mismatch</br>
+         Is it graph-isomorphic? False
+       </code>
+     </pre>
+  </div>
+  <div class="isShow 451">
+  <!-- 4.5 -->
+  <p class="content_p">4.5	Application 2: The design of graph kernels based on color refinement</p>
+  <!-- 4.5.1 -->
+    <p class="content_p">4.5.1	Introduction of Graph Kernel</p>
+    <span class="content_span">There are several applications for graph structure data, including social networks, protein or gene regulatory networks, chemical structures, protein structures and so on. Structural similarity is frequently considered as a requirement or presumption when solving graph structure-related problems. Therefore, the problem of graph similarity metric is the core of learning on graphs.  </span>
+    <span class="content_span">Graph kernels have recently evolved into a popular branch of structured data learning. Kernelized learning algorithms such as support vector machines work directly on graphs, without having to do feature extraction to transform them to fixed-length, real-valued feature vectors. </span>
+    <span class="content_span">An example of a kernel between graphs is the random walk kernel, which conceptually performs random walks on two graphs simultaneously, then counts the number of paths that were produced by both walks. This is equivalent to doing random walks on the direct product of the pair of graphs, and from this, a kernel can be derived that can be efficiently computed. </span>
+    <span class="content_span">Another example is the Weisfeiler-Lehman graph kernel which computes multiple rounds of the Weisfeiler-Lehman algorithm and then computes the similarity of two graphs as the inner product of the histogram vectors of both graphs. In those histogram vectors the kernel collects the number of times a color occurs in the graph in every iteration. Note that the Weisfeiler-Lehman kernel in theory has an infinite dimension as the number of possible colors assigned by the Weisfeiler-Lehman algorithm is infinite. By restricting to the colors that occur in both graphs, the computation is still feasible. </span>
+    <span class="content_span">The performance for different graph kernels can be shown on the following chart. As we can see from the chart, current kernel methods suffer from two rather obvious drawbacks: long running time and unfriendliness to overly large data. Color refinement and Weisfeiler-Leman graph kernels excel in both areas. </span>
+    <img class="content_img1" src="./img/4_5.png" alt="">
+    <span class="content_figure">Figure 4.5: The performance for different graph kernels</span>
+    <span class="content_span">Here we focus on Weisfeiler-Lehman graph kernel with detailed description. </span>
+  </div>
+  <div class="isShow 452">
+    <!-- 4.5.2 -->
+    <p class="content_p">4.5.2	Weisfeiler-Lehman graph kernel</p>
+    <img class="content_img2" src="./img/content_8.png" alt="">
+    <img class="content_img1" src="./img/4_6.png" alt="">
+    <span class="content_figure">Figure 4.6: The computation of the implicit feature vectors of two graphs G (left) and G^'(right) in the Weisfeiler-Leman Graph Kernel. The figure also shows the histograms of colors that appear in the two graphs highlighting their similarity.</span>
+    <span class="content_span"> Experiments show that the information collected by the kernel is sufficient to adequately perform desired classification tasks [ref1]. These experiments also indicate that choosing the number of iterations as h≈5 is best. Indeed, since almost all graphs are distinguished by color refinement, performing too many iterations means that the colors contain too much (global) information about the graphs they are situated in and cannot be used as a meaningful measure of similarity. (In fact, two graphs will most likely not share any vertices of the same color if the number of rounds is too large.)</span>
+    <span class="content_span">As with the other applications for color refinement, a major advantage of the methods is its running time. Since an iteration of color refinement can be performed in time O(m), to compute the Weisfeiler-Leman Graph Kernel that uses h iterations on a pair of graphs on m edges, we require time O(mh). However, in applications, we intend to apply the kernel between all pairs of graphs coming from a large set of examples, of size N say. A crucial observation is that instead of performing color refinement on the disjoint union of the two graphs we can also perform it separately on each graph. 
+    Doing so, we cannot simply rename the new arising colors, since this might be inconsistent between graphs. However, using a suitable hash function we can remedy the situation. We obtain a running time of O(Nhm + N^2 hn) to compute the kernels between every pair of graphs from a set of size N. Here the rst summand arises from color refinement on N graphs, while the second summand is the computation of the scalar product for each of the N^2 pairs of graphs.</span>
+    <span class="content_span"> There are many examples of Weisfeiler-Leman Graph Kernel. This website is not going to go into detail on this section. Commonly used are the Ramon-Gartner Subtree Kernels, the Weisfeiler-Lehman Edge Kernel, the Weisfeiler-Lehman Shortest Path Kernel.</span>
+    <span class="content_span"> If you are interested, look at here:</span>
+  
+    <a class="content_a" href="https://www.jmlr.org/papers/volume12/shervashidze11a/shervashidze11a.pdf">&nbsp; - &nbsp; https://arxiv.org/pdf/2005.08887.pdf </a> 
+    <a class="content_a" href="https://arxiv.org/pdf/2005.08887.pdf">&nbsp; - &nbsp; https://arxiv.org/pdf/2005.08887.pdf </a> 
+  
+  </div>
+  <div class="isShow 46">
+<!-- 4.6 -->
+<p class="content_p">4.6	Application 3: A logical characterization of color refinement</p>
+<img class="content_img2" src="./img/content_9.png" alt="">
+  </div>
+</div>
+  <!-- 宝儿 这个居中一下 辛苦！ -->
+    <footer style="text-align: center;">CRA Explainer @copyright</footer>
+</div>
+<script>
+function getLiId(e){
+  $('.li_click').each(function(){
+    $(this).find('a').removeClass('active')
+  })
+  $(e).find('a').addClass('active')
+  let className =  $(e).attr('id')
+  $('.mainText').removeClass('isHide')
+  $(`.isShow`).removeClass('isHide')
+  $(`.${className}`).addClass('isHide')
+}
+$('.head_span').click(function(){
+  $(`.isShow`).removeClass('isHide')
+  $('.mainText').addClass('isHide')
+})
+</script>
+</body>
+</html>
